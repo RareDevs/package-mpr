@@ -2,19 +2,19 @@
 # Maintainer: zocker_160 <zocker1600 at posteo dot net>
 
 pkgname=rare
-pkgver=1.6.2
+pkgver=1.7.0
 pkgrel=1
 pkgdesc="A GUI for legendary, an open source replacement for Epic Games Launcher"
 arch=('any')
 url="https://github.com/Dummerle/Rare"
 license=('GPL3')
-depends=("python3-wheel" "python3-setuptools" "python3-pyqt5" "python3-qtawesome" "python3-requests" "python3-pil" "python3-psutil" "python3-pypresence")
+depends=("python3-wheel" "python3-setuptools" "python3-pyqt5" "python3-qtawesome" "python3-requests" "python3-psutil" "python3-pypresence")
 makedepends=("git" "python3-setuptools" "gendesk")
 optdepends=("wine-staging: Run windows games")
 provides=('rare')
-conflicts=('rare-git')
+conflicts=('rare-git' 'legendary')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=("e63ae0f57df5d46efca127bc1da46716e8842e85233dd52a981d82e3d43aaf29")
+sha256sums=("SKIP")
 
 prepare() {
     cd "$srcdir/Rare-$pkgver"
