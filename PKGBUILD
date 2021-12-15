@@ -2,7 +2,7 @@
 # Maintainer: zocker_160 <zocker1600 at posteo dot net>
 
 pkgname=rare
-pkgver=1.7.1
+pkgver=1.8.0
 pkgrel=1
 pkgdesc="A GUI for legendary, an open source replacement for Epic Games Launcher"
 arch=('any')
@@ -14,7 +14,7 @@ makedepends=("git" "python3-setuptools")
 checkdepends=()
 optdepends=("wine-staging: Run windows games")
 provides=()
-conflicts=("legendary" "rare-git")
+conflicts=("rare-git")
 replaces=()
 backup=()
 options=()
@@ -41,7 +41,7 @@ build() {
 package() {
 	cd "$srcdir/$pkgname-$pkgver"
 	python3 setup.py install --root="$pkgdir/" --optimize=1 --skip-build
-	install -Dm644 "scripts/${pkgname}.desktop" "$pkgdir/usr/share/applications/${pkgname}.desktop"
+	install -Dm644 "misc/${pkgname}.desktop" "$pkgdir/usr/share/applications/${pkgname}.desktop"
 	install -Dm644 "${pkgname}.png" "$pkgdir/usr/share/pixmaps/$pkgname.png"
 }
 
