@@ -40,7 +40,7 @@ build() {
 
 package() {
 	cd "$srcdir/$pkgname-$pkgver"
-	python3 setup.py install --root="$pkgdir/" --optimize=1 --skip-build
+	python3 setup.py install --prefix=/usr --install-layout=deb --root="$pkgdir/" --optimize=1 --skip-build
 	install -Dm644 "misc/${pkgname}.desktop" "$pkgdir/usr/share/applications/${pkgname}.desktop"
 	install -Dm644 "${pkgname}.png" "$pkgdir/usr/share/pixmaps/$pkgname.png"
 }
