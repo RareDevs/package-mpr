@@ -2,7 +2,7 @@
 # Maintainer: zocker_160 <zocker1600 at posteo dot net>
 
 pkgname=rare
-pkgver=1.8.5
+pkgver=1.8.6
 pkgrel=1
 pkgdesc="A GUI for legendary, an open source replacement for Epic Games Launcher"
 arch=('any')
