@@ -2,7 +2,7 @@ generated-by = makedeb-makepkg
 
 pkgbase = rare
 	pkgdesc = A GUI for legendary, an open source replacement for Epic Games Launcher
-	pkgver = 1.8.6
+	pkgver = 1.8.7
 	pkgrel = 1
 	url = https://github.com/Dummerle/Rare
 	arch = any
@@ -17,7 +17,7 @@ pkgbase = rare
 	optdepends = wine-staging: Run windows games
 	optdepends = python3-pypresence
 	conflicts = rare-git
-	source = rare-1.8.6::git+https://github.com/Dummerle/Rare#tag=1.8.6
+	source = rare-1.8.7::git+https://github.com/Dummerle/Rare#tag=1.8.7
 	sha256sums = SKIP
 
 pkgname = rare
