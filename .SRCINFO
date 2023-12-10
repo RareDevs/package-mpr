@@ -2,23 +2,24 @@ generated-by = makedeb-makepkg
 
 pkgbase = rare
 	pkgdesc = A GUI for legendary, an open source replacement for Epic Games Launcher
-	pkgver = 1.10.3
+	pkgver = 1.10.6
 	pkgrel = 1
-	url = https://github.com/Dummerle/Rare
+	url = https://github.com/RareDevs/Rare
 	arch = any
 	license = GPL3
 	makedepends = git
 	makedepends = python3-setuptools
 	depends = python3-wheel
 	depends = python3-pyqt5
+	depends = python3-pyqt5.qtsvg
 	depends = python3-qtawesome
 	depends = python3-requests
-	depends = python3-typing-extension
+	depends = python3-typing-extensions
 	depends = legendary
-	optdepends = wine-staging: Run windows games
-	optdepends = python3-pypresence
-	conflicts = rare-git
-	source = rare-1.10.3::git+https://github.com/Dummerle/Rare#tag=1.10.3
+	optdepends = wine: run Windows games
+	optdepends = python3-pypresence: Discord RPC integration
+	optdepends = python3-webview: embedded browser for logging in
+	source = git+https://github.com/RareDevs/Rare.git#tag=1.10.6
 	sha256sums = SKIP
 
 pkgname = rare
