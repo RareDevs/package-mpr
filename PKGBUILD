@@ -3,7 +3,7 @@
 
 pkgname=rare
 pkgver=1.10.7
-pkgrel=1
+pkgrel=9
 pkgdesc="A GUI for legendary, an open source replacement for Epic Games Launcher"
 arch=('any')
 url="https://github.com/RareDevs/Rare"
