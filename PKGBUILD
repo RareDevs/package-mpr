@@ -3,7 +3,7 @@
 
 pkgname=rare
 pkgver=1.10.11
-pkgrel=9
+pkgrel=1
 pkgdesc="A GUI for legendary, an open source replacement for Epic Games Launcher"
 arch=('any')
 url="https://github.com/RareDevs/Rare"
@@ -14,7 +14,6 @@ depends=(
   python3-pyqt5.qtsvg
   python3-qtawesome
   python3-requests
-  python3-typing-extensions
   python3-orjson
   legendary
 )
