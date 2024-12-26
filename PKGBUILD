@@ -19,6 +19,7 @@ depends=(
 )
 makedepends=(
   git
+  python3-{build,installer,wheel}
   python3-setuptools
 )
 optdepends=(
@@ -31,12 +32,12 @@ sha256sums=("SKIP")
 
 build() {
   cd Rare
-  python3 setup.py build
+  python -m build -wn
 }
 
 package() {
   cd Rare
-  python3 setup.py install --prefix=/usr --install-layout=deb --root="$pkgdir/" --optimize=1 --skip-build
+  python -m installer -d "$pkgdir" dist/*.whl
   install -Dm644 "misc/${pkgname%-git}.desktop" "$pkgdir/usr/share/applications/${pkgname%-git}.desktop"
   install -Dm644 "rare/resources/images/Rare.png" "$pkgdir/usr/share/pixmaps/${pkgname%-git}.png"
 }
