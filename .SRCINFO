@@ -2,7 +2,7 @@ generated-by = makedeb-makepkg
 
 pkgbase = rare
 	pkgdesc = Open source alternative for Epic Games Launcher, using Legendary
-	pkgver = 1.10.11.525
+	pkgver = 1.11.2
 	pkgrel = 1
 	url = https://github.com/RareDevs/Rare
 	arch = any
@@ -22,7 +22,7 @@ pkgbase = rare
 	optdepends = wine: run Windows games
 	optdepends = python3-pypresence: Discord RPC integration
 	optdepends = python3-webview: embedded browser for logging in
-	source = git+https://github.com/RareDevs/Rare.git#tag=1.10.11.525
-	sha256sums = 5571dce60d9dfca6f58c678a31a8e24425b3cb64e7184a8451a0fdcf47702f1f
+	source = git+https://github.com/RareDevs/Rare.git#tag=1.11.2
+	sha256sums = 64d8f9c0f0c9291ca10a5d40bcd96c39f03b1e650f216edbe212d977de078edc
 
 pkgname = rare
